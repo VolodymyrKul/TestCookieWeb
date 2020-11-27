@@ -6,7 +6,7 @@ using TestCookieWeb.Core.Models;
 
 namespace TestCookieWeb.Core.Abstractions.IRepositories
 {
-    public public interface ICommentRepo : IBaseRepo<Comment>
+    public interface ICommentRepo : IBaseRepo<Comment>
     {
     }
 }

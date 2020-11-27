@@ -9,6 +9,11 @@ namespace TestCookieWeb.Core.Models
     {
         public User()
         {
+            Notification = new HashSet<Notification>();
+            Comment = new HashSet<Comment>();
+            Department = new HashSet<Department>();
+            DepartmentUser = new HashSet<DepartmentUser>();
+            UserRequest = new HashSet<UserRequest>();
         }
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -22,5 +27,11 @@ namespace TestCookieWeb.Core.Models
         public int? IdUserRole { get; set; }
 
         public virtual UserRole IdUserRoleNavigation { get; set; }
+        public virtual ICollection<Notification> Notification { get; set; }
+        public virtual ICollection<Comment> Comment { get; set; }
+        public virtual ICollection<Department> Department { get; set; }
+        public virtual ICollection<DepartmentUser> DepartmentUser { get; set; }
+        public virtual ICollection<UserRequest> UserRequest { get; set; }
+        public virtual ICollection<Request> Request { get; set; }
     }
 }
