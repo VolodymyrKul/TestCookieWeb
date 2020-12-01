@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TestCookieWeb.Core.Abstractions.IServices;
 using TestCookieWeb.Core.DTO;
+using TestCookieWeb.Core.Models;
 
 namespace TestCookieWeb.Controllers
 {
@@ -37,6 +38,7 @@ namespace TestCookieWeb.Controllers
         [HttpPost]
         public ActionResult<RequestDTO> Pull(RequestDTO order)
         {
+            _requestService.CreateAsync(order);
             return Ok(_requestService.CreateAsync(order));
         }
 

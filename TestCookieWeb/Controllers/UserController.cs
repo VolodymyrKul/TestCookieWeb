@@ -45,8 +45,17 @@ namespace TestCookieWeb.Controllers
         [HttpPost]
         public async Task<ActionResult<UserDTO>> Pull(UserDTO order)
         {
-            await _userService.CreateAsync(order);
-            return Ok(order);
+            List<UserDTO> users  = await _userService.GetAll();
+            var result = users.FirstOrDefault(u => u.Email == order.Email);
+            if (result == null)
+            {
+                await _userService.CreateAsync(order);
+                return Ok(order);
+            }
+            else
+            {
+                return BadRequest("User already is in database");
+            }
         }
 
         [HttpPut]
