@@ -21,37 +21,38 @@ namespace TestCookieWeb.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<RequestDTO>> Get()
+        public async Task<ActionResult<List<RequestDTO>>> Get()
         {
-            var result = _requestService.GetAll();
+            var result = await _requestService.GetAll();
             return Ok(result);
 
         }
 
         [HttpGet("{id}")]
-        public ActionResult<RequestDTO> getById(int id)
+        public async Task<ActionResult<RequestDTO>> getById(int id)
         {
-            var result = _requestService.GetIdAsync(id);
+            var result = await _requestService.GetIdAsync(id);
             return Ok(result);
         }
 
         [HttpPost]
-        public ActionResult<RequestDTO> Pull(RequestDTO order)
+        public async Task<ActionResult<RequestDTO>> Pull(RequestDTO order)
         {
-            _requestService.CreateAsync(order);
-            return Ok(_requestService.CreateAsync(order));
+            await _requestService.CreateAsync(order);
+            return Ok(order);
         }
 
         [HttpPut]
-        public ActionResult<RequestDTO> Update(RequestDTO order)
+        public async Task<ActionResult<RequestDTO>> Update(RequestDTO order)
         {
-            return Ok(_requestService.UpdateAsync(order));
+            var result = await _requestService.UpdateAsync(order);
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _requestService.DeleteAsync(id);
+            await _requestService.DeleteAsync(id);
             return NoContent();
         }
     }

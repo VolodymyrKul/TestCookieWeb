@@ -39,7 +39,7 @@ namespace TestCookieWeb.Services
         public virtual async Task<List<CommentDTO>> GetAll()
         {
             var comments = await unitOfWork.CommentRepo.GetAllAsync();
-            List<CommentDTO> commentDTOs = comments.Select(comment => _mapper.Map(comment, new CommentDTO())).ToList(); ;
+            List<CommentDTO> commentDTOs = comments.Select(comment => _mapper.Map(comment, new CommentDTO())).ToList();
             return commentDTOs;
         }
 

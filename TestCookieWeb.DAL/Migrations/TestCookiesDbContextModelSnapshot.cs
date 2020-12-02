@@ -1271,7 +1271,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 1,
                             LastName = "Kulchytskyi",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "admin",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1284,7 +1284,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Skalskyi",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "dephead",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1297,7 +1297,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Salii",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1310,7 +1310,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Iliv",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1323,7 +1323,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Turianskyi",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1336,7 +1336,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Stasenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1349,7 +1349,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Pynzyn",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1362,7 +1362,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Hlado",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1375,7 +1375,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Melnyk",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1388,7 +1388,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Shevchenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1401,7 +1401,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Boiko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1414,7 +1414,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Kovalenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1427,7 +1427,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Bondarenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1440,7 +1440,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Tkachenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1453,7 +1453,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Kovalchuk",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1466,7 +1466,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Kravchenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1479,7 +1479,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Oliinyk",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1492,7 +1492,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Shevchuk",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1505,7 +1505,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Koval",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1518,7 +1518,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Polishchuk",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1531,7 +1531,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Bondar",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1544,7 +1544,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Tkachuk",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1557,7 +1557,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Moroz",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1570,7 +1570,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Marchenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1583,7 +1583,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Lysenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1596,7 +1596,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Rudenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1609,7 +1609,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Savchenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1622,7 +1622,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 3,
                             LastName = "Petrenko",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1635,7 +1635,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Krysa",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1648,7 +1648,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Kernytskyi",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -1661,7 +1661,7 @@ namespace TestCookieWeb.DAL.Migrations
                             IdUserRole = 2,
                             LastName = "Horak",
                             NotificationPermission = true,
-                            Password = "B9-0F-FB-AD-D6-FA-0E-AC-C1-47-1E-57-5F-E9-C7-B1",
+                            Password = "9D58B6120CF9D51DB7EBD89CFA2FF669",
                             RefreshToken = "employee",
                             RegisterDate = new DateTime(2020, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });

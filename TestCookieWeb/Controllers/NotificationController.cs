@@ -20,36 +20,38 @@ namespace TestCookieWeb.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<NotificationDTO>> Get()
+        public async Task<ActionResult<List<NotificationDTO>>> Get()
         {
-            var result = _notificationService.GetAll();
+            var result = await _notificationService.GetAll();
             return Ok(result);
 
         }
 
         [HttpGet("{id}")]
-        public ActionResult<NotificationDTO> getById(int id)
+        public async Task<ActionResult<NotificationDTO>> getById(int id)
         {
-            var result = _notificationService.GetIdAsync(id);
+            var result = await _notificationService.GetIdAsync(id);
             return Ok(result);
         }
 
         [HttpPost]
-        public ActionResult<NotificationDTO> Pull(NotificationDTO order)
+        public async Task<ActionResult<NotificationDTO>> Pull(NotificationDTO order)
         {
-            return Ok(_notificationService.CreateAsync(order));
+            await _notificationService.CreateAsync(order);
+            return Ok(order);
         }
 
         [HttpPut]
-        public ActionResult<NotificationDTO> Update(NotificationDTO order)
+        public async Task<ActionResult<NotificationDTO>> Update(NotificationDTO order)
         {
-            return Ok(_notificationService.UpdateAsync(order));
+            var result = await _notificationService.UpdateAsync(order);
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _notificationService.DeleteAsync(id);
+            await _notificationService.DeleteAsync(id);
             return NoContent();
         }
     }

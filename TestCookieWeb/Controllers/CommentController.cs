@@ -20,9 +20,9 @@ namespace TestCookieWeb.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<CommentDTO>> Get()
+        public async Task<ActionResult<List<CommentDTO>>> Get()
         {
-            var result = _commentService.GetAll();
+            var result = await _commentService.GetAll();
             return Ok(result);
 
         }
@@ -35,21 +35,23 @@ namespace TestCookieWeb.Controllers
         }
 
         [HttpPost]
-        public ActionResult<CommentDTO> Pull(CommentDTO order)
+        public async Task<ActionResult<CommentDTO>> Pull(CommentDTO order)
         {
-            return Ok(_commentService.CreateAsync(order));
+            await _commentService.CreateAsync(order);
+            return Ok(order);
         }
 
         [HttpPut]
-        public ActionResult<CommentDTO> Update(CommentDTO order)
+        public async Task<ActionResult<CommentDTO>> Update(CommentDTO order)
         {
-            return Ok(_commentService.UpdateAsync(order));
+            var result = await _commentService.UpdateAsync(order);
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _commentService.DeleteAsync(id);
+            await _commentService.DeleteAsync(id);
             return NoContent();
         }
     }

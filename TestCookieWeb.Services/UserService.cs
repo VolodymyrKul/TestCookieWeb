@@ -41,6 +41,10 @@ namespace TestCookieWeb.Services
         {
             var users = await unitOfWork.UserRepo.GetAllAsync();
             List<UserDTO> userDTOs = users.Select(user => _mapper.Map(user, new UserDTO())).ToList();
+            foreach(UserDTO item in userDTOs)
+            {
+                item.Password = RC5Helper.GetStartMes(item.Password);
+            }
             return userDTOs;
         }
 
@@ -51,12 +55,14 @@ namespace TestCookieWeb.Services
                 throw new Exception("Such order not found");
             var dto = new UserDTO();
             _mapper.Map(user, dto);
+            dto.Password = RC5Helper.GetStartMes(dto.Password);
             return dto;
         }
 
         public virtual async Task<UserDTO> UpdateAsync(UserDTO entity)
         {
             var value = new User();
+            entity.Password = RC5Helper.GetStartMes(entity.Password);
             _mapper.Map(entity, value);
             await unitOfWork.UserRepo.UpdateAsync(value);
             await unitOfWork.SaveChangesAsync();

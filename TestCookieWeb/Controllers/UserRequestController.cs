@@ -20,36 +20,38 @@ namespace TestCookieWeb.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<UserRequestDTO>> Get()
+        public async Task<ActionResult<List<UserRequestDTO>>> Get()
         {
-            var result = _userRequestService.GetAll();
+            var result = await _userRequestService.GetAll();
             return Ok(result);
 
         }
 
         [HttpGet("{id}")]
-        public ActionResult<UserRequestDTO> getById(int id)
+        public async Task<ActionResult<UserRequestDTO>> getById(int id)
         {
-            var result = _userRequestService.GetIdAsync(id);
+            var result = await _userRequestService.GetIdAsync(id);
             return Ok(result);
         }
 
         [HttpPost]
-        public ActionResult<UserRequestDTO> Pull(UserRequestDTO order)
+        public async Task<ActionResult<UserRequestDTO>> Pull(UserRequestDTO order)
         {
-            return Ok(_userRequestService.CreateAsync(order));
+            await _userRequestService.CreateAsync(order);
+            return Ok(order);
         }
 
         [HttpPut]
-        public ActionResult<UserRequestDTO> Update(UserRequestDTO order)
+        public async Task<ActionResult<UserRequestDTO>> Update(UserRequestDTO order)
         {
-            return Ok(_userRequestService.UpdateAsync(order));
+            var result = await _userRequestService.UpdateAsync(order);
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _userRequestService.DeleteAsync(id);
+            await _userRequestService.DeleteAsync(id);
             return NoContent();
         }
     }

@@ -20,36 +20,38 @@ namespace TestCookieWeb.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<DepartmentDTO>> Get()
+        public async Task<ActionResult<List<DepartmentDTO>>> Get()
         {
-            var result = _departmentService.GetAll();
+            var result = await _departmentService.GetAll();
             return Ok(result);
 
         }
 
         [HttpGet("{id}")]
-        public ActionResult<DepartmentDTO> getById(int id)
+        public async Task<ActionResult<DepartmentDTO>> getById(int id)
         {
-            var result = _departmentService.GetIdAsync(id);
+            var result = await _departmentService.GetIdAsync(id);
             return Ok(result);
         }
 
         [HttpPost]
-        public ActionResult<DepartmentDTO> Pull(DepartmentDTO order)
+        public async Task<ActionResult<DepartmentDTO>> Pull(DepartmentDTO order)
         {
-            return Ok(_departmentService.CreateAsync(order));
+            await _departmentService.CreateAsync(order);
+            return Ok(order);
         }
 
         [HttpPut]
-        public ActionResult<DepartmentDTO> Update(DepartmentDTO order)
+        public async Task<ActionResult<DepartmentDTO>> Update(DepartmentDTO order)
         {
-            return Ok(_departmentService.UpdateAsync(order));
+            var result = await _departmentService.UpdateAsync(order);
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _departmentService.DeleteAsync(id);
+            await _departmentService.DeleteAsync(id);
             return NoContent();
         }
     }

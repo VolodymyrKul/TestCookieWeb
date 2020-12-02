@@ -30,7 +30,7 @@ namespace TestCookieWeb.Extensions
             services.AddScoped<IDepUserService, DepUserService>();
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IRequestService, RequestService>();
-            services.AddScoped<IUserRoleService, UserRoleService>();
+            services.AddScoped<IUserRequestService, UserRequestService>();
         }
 
         public static void ConfigureAuthentication(this IServiceCollection services, IConfiguration configuration)

@@ -67,12 +67,14 @@ namespace TestCookieWeb.Services
             List<Request> requests = (await unitOfWork.RequestRepo.GetAllAsync()).ToList();
             Request CreatedRequest = requests[requests.Count - 1];
             List<DepartmentUser> depUsers = (await unitOfWork.DepUserRepo.GetAllAsync()).ToList();
-            var depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == CreatedRequest.IdUser);
-            while (depHeadUser != null)
+            List<Department> departs = (await unitOfWork.DepartmentRepo.GetAllAsync()).ToList();
+            var depUser = depUsers.FirstOrDefault(u => u.IdUser == CreatedRequest.IdUser);
+            while (depUser != null)
             {
+                var userDepart = departs.FirstOrDefault(d => d.Id == depUser.IdDepartment);
                 UserRequest userRequest = new UserRequest() 
                 { 
-                    IdApproveUser = depHeadUser.Id, 
+                    IdApproveUser = userDepart.IdDepHead, 
                     IdRequest = CreatedRequest.Id, 
                     IdComment = 1, 
                     ApproveStatus = false 
@@ -81,33 +83,37 @@ namespace TestCookieWeb.Services
 
                 Notification notification = new Notification()
                 {
-                    IdUser = depHeadUser.Id,
+                    IdUser = userDepart.Id,
                     Title = "New request for approving",
                     Description = "User " + CreatedRequest.IdUserNavigation.Email + " create new request",
                     Read = false
                 };
                 await unitOfWork.NotificationRepo.AddAsync(notification);
 
-                depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == depHeadUser.IdUser);
+                depUser = depUsers.FirstOrDefault(u => u.IdUser == userDepart.IdDepHead);
             }
         }
 
         private async Task DelUserReq(Request entity)
         {
             List<DepartmentUser> depUsers = (await unitOfWork.DepUserRepo.GetAllAsync()).ToList();
-            var depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == entity.IdUser);
-            while (depHeadUser != null)
+            List<Department> departs = (await unitOfWork.DepartmentRepo.GetAllAsync()).ToList();
+            var depUser = depUsers.FirstOrDefault(u => u.IdUser == entity.IdUser);
+            //var depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == entity.IdUser);
+            while (depUser != null)
             {
+                var userDepart = departs.FirstOrDefault(d => d.Id == depUser.IdDepartment);
                 string desc = "User " + entity.IdUserNavigation.Email + " create new request";
                 List<Notification> notifications = (await unitOfWork.NotificationRepo.GetAllAsync()).ToList();
-                var notification = notifications.FirstOrDefault(n => n.IdUser == depHeadUser.Id && n.Description == desc);
+                var notification = notifications.FirstOrDefault(n => n.IdUser == userDepart.IdDepHead && n.Description == desc);
                 await unitOfWork.NotificationRepo.DeleteAsync(notification);
 
                 List<UserRequest> userRequests = (await unitOfWork.UserRequestRepo.GetAllAsync()).ToList();
-                var userRequest = userRequests.FirstOrDefault(ur => ur.IdApproveUser == depHeadUser.Id && ur.IdRequest == entity.Id);
+                var userRequest = userRequests.FirstOrDefault(ur => ur.IdApproveUser == userDepart.IdDepHead && ur.IdRequest == entity.Id);
                 await unitOfWork.UserRequestRepo.DeleteAsync(userRequest);
 
-                depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == depHeadUser.IdUser);
+                depUser = depUsers.FirstOrDefault(u => u.IdUser == userDepart.IdDepHead);
+                //depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == depHeadUser.IdUser);
             }
         }
     }
