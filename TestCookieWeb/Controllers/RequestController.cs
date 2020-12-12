@@ -55,5 +55,12 @@ namespace TestCookieWeb.Controllers
             await _requestService.DeleteAsync(id);
             return NoContent();
         }
+
+        [HttpGet("approve/{uid}")]
+        public async Task<ActionResult<List<RequestDTO>>> GetApprove(int uid)
+        {
+            var result = await _requestService.GetAllApprove(uid);
+            return Ok(result);
+        }
     }
 }

@@ -116,5 +116,18 @@ namespace TestCookieWeb.Services
                 //depHeadUser = depUsers.FirstOrDefault(u => u.IdUser == depHeadUser.IdUser);
             }
         }
+
+        public virtual async Task<List<RequestDTO>> GetAllApprove(int UserId) {
+            var userreqs = (await unitOfWork.UserRequestRepo.GetAllAsync()).ToList();
+            var approveIds = userreqs.Where(u => u.IdApproveUser == UserId).Select(u=>u.IdRequest);
+            var distinctIds = approveIds.Distinct();
+            List<RequestDTO> requestDTOs = new List<RequestDTO>();
+            foreach (int ItemId in distinctIds)
+            {
+                var requests = await unitOfWork.RequestRepo.GetAllAsync();
+                requestDTOs.Add(_mapper.Map(requests.FirstOrDefault(r => r.Id == ItemId), new RequestDTO()));
+            }
+            return requestDTOs;
+        }
     }
 }
